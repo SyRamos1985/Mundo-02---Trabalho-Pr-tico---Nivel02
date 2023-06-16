@@ -1,0 +1,27 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Livros Angular</a>
+  
+  <button
+    class="navbar-book"
+    type="button"
+    data-toggle="breaks"
+    data-target="#navbar-bookshop"
+    aria-controls="navbar-bookshop"
+    aria-expanded="falso"
+    aria-label="Toggle navigation"
+    >
+
+    <span class="navbar-icon-bookshop"></span>
+  </button>
+  <div class="breaks navbar-breaks" id="navbar-bookshop">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/lista">Catálogo</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/dados">Novo</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<router-outlet></router-outlet>
